@@ -1,4 +1,4 @@
-package com.example.demo.api;
+package com.example.demo.noconfig;
 
 public interface Vehicle {
     void getName() ;

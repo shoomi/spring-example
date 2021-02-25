@@ -1,4 +1,4 @@
-package com.example.demo.api;
+package com.example.demo.noconfig;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -10,8 +10,9 @@ import javax.annotation.PreDestroy;
 public class Bus implements Vehicle {
 
     @PostConstruct
+    // перезапище @value("...")
     private void doInit() {
-        System.out.println("Init bus");
+        name = "VAZ-init";
     }
 
     @PreDestroy

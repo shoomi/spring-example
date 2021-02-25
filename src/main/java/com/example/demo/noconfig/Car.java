@@ -1,6 +1,5 @@
-package com.example.demo.api;
+package com.example.demo.noconfig;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component("car")
