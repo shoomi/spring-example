@@ -12,4 +12,9 @@ public class Car implements Vehicle {
     public void getName() {
         System.out.println("I'm car " + name);
     }
+
+    @Override
+    public String getType() {
+        return "car";
+    }
 }

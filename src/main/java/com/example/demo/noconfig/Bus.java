@@ -27,4 +27,9 @@ public class Bus implements Vehicle {
     public void getName() {
         System.out.println("I'm bus " + name);
     }
+
+    @Override
+    public String getType() {
+        return "bus";
+    }
 }
