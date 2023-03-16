@@ -20,11 +20,4 @@ public class Controller {
         vehicle.getName();
     }
 
-    private final Map<String, Vehicle> stringVehicleMap;
-
-    public Controller(List<Vehicle> vehicleList) {
-        stringVehicleMap = vehicleList.stream()
-            .collect(
-                Collectors.toMap(Vehicle::getType, Function.identity()));
-    }
 }

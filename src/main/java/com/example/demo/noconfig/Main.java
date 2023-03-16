@@ -16,6 +16,8 @@ public class Main {
         controller.doIt();
         Vehicle vehicle = context.getBean("car", Vehicle.class);
         vehicle.getName();
+        VehicleFactory vehicleFactory = context.getBean(VehicleFactory.class);
+        System.out.println(vehicleFactory.getStringVehicleMap());
     }
 
     @Bean
